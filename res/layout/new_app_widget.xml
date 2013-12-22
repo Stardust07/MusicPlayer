@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|fill_horizontal"
+        android:gravity="center"
+        android:background="#0000"
+        android:textColor="#ffff"
+        android:text="播放列表为空" />
+    	
+        <LinearLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:gravity="center"
+    		android:orientation="horizontal" >
+    	<ImageButton
+    	    android:id="@+id/widget_previous"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:src="@drawable/previous_music_selector" 
+    	     />
+    	
+    	<ImageButton
+    	    android:id="@+id/widget_play"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:src="@drawable/play_selector" 
+    	     />
+    	
+    	<ImageButton
+    	    android:id="@+id/widget_next"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:src="@drawable/next_music_selector"
+    	    />
+        </LinearLayout>
+    </LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">播放器</string>
+    <string name="action_settings">播放模式</string>
+    <string name="action_exit">退出</string>
+    <string name="welcome_start">开始</string>
+    <string name="welcome">欢迎使用音乐播放器</string>
+    <string name="title_activity_list">音乐列表</string>
+    <string name="title_activity_play">播放页面</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_music_list">MusicList</string>
+    <string name="title_activity_widget_provider">WidgetProvider</string>
+
+</resources>

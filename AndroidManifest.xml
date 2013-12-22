@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hustunique.musicplayer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hustunique.musicplayer.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hustunique.musicplayer.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="com.hustunique.musicplayer.List"
+            android:label="@string/title_activity_list" >
+        </activity>
+
+        <service
+            android:name="com.hustunique.musicplayer.PlayMusic"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="com.hustunique.musicplayer.PlayActivity"
+            android:label="@string/title_activity_play" >
+        </activity>
+
+        <receiver android:name="com.hustunique.musicplayer.NewAppWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/new_app_widget_info" />
+        </receiver>
+
+        <activity
+            android:name="com.hustunique.musicplayer.MusicList"
+            android:label="@string/title_activity_music_list" >
+        </activity>
+        <activity
+            android:name="com.hustunique.musicplayer.WidgetProvider"
+            android:label="@string/title_activity_widget_provider" >
+        </activity>
+    </application>
+
+</manifest>

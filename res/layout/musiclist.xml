@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/musiclist"
+        android:layout_width="match_parent"
+        android:layout_height="385dp"
+        android:layout_weight="0.56"
+        tools:listitem="@android:layout/simple_list_item_2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/previous_music_selector" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/play_selector" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/next_music_selector" />
+
+    </LinearLayout>
+
+</LinearLayout>

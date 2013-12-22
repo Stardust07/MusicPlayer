@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:id="@+id/l"
+    android:orientation="vertical" >
+
+    <TextView android:id="@+id/titleshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+         />
+    
+     <TextView android:id="@+id/artistshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+         />
+
+     <TextView
+         android:id="@+id/durationshow"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textColor="#ffffff"
+         android:textSize="20sp" />
+    
+    <SeekBar
+        android:id="@+id/process"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+     <TextView android:id="@+id/currenttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+         />
+
+	<com.hustunique.musicplayer.Lrc
+    	android:id="@+id/lrcView"
+    	android:layout_width="match_parent"
+    	android:layout_height="280dp"
+    	android:layout_gravity="center" />
+        
+    <LinearLayout 
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:orientation="horizontal" >
+
+    	<Button
+    	    android:id="@+id/previous"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"
+    	    android:background="@drawable/previous_music_selector" 
+    	     />
+    	
+    	<Button
+    	    android:id="@+id/play"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"
+    	   android:background="@drawable/play_selector" 
+    	     />
+    	
+    	<Button
+    	    android:id="@+id/next"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="1"
+    	    android:background="@drawable/next_music_selector"
+    	    />
+    	
+        
+    </LinearLayout>
+
+</LinearLayout>
